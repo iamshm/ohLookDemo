@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -114,7 +115,6 @@ class _MyHomePageState extends State<MyHomePage>
                           labelColor: Color(0xff262863),
                           unselectedLabelColor: Colors.grey,
                           indicatorSize: TabBarIndicatorSize.label,
-                          indicatorWeight: 4.0,
                           isScrollable: true,
                           tabs: <Widget>[
                             Tab(
@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage>
               //participationbutton
               Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
-                height: 70,
+                height: 60,
                 width: 400,
                 decoration: BoxDecoration(
                     color: Color(0xff262863),
@@ -158,8 +158,10 @@ class _MyHomePageState extends State<MyHomePage>
                             ),
                             Text(
                               "Stand a chance to win mighty prizes",
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontSize: 15,
+                              ),
                             )
                           ]),
                     ),
